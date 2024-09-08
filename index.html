@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
-        <h1>Calculadora IMC</h1>
-        <form id="formIMC">
+        <h1>Calculadora de IMC</h1>
+        <form id="imcForm">
             <label for="peso">Peso (kg):</label>
-            <input type="number" id="peso" placeholder="Digite seu peso" required>
-
+            <input type="number" id="peso" step="any">
             <label for="altura">Altura (m):</label>
-            <input type="number" step="0.01" id="altura" placeholder="Digite sua altura" required>
-
+            <input type="number" id="altura" step="any">
             <button id="calcularBtn">Calcular IMC</button>
         </form>
         <div id="resultado"></div>
     </div>
-
-    <!-- Script como módulo -->
-    <script type="module" src="script.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
-
 </html>
